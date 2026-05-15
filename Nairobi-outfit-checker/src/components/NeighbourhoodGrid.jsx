@@ -1,4 +1,4 @@
-import { NEIGHBOURHOODS } from '../data/neighbourhoods'
+import { NEIGHBOURHOODS } from '../Neighbourhoods'
 function NeighbourhoodGrid({ onSelect, loadingArea, selected }) {
   return (
     <div className="neighbourhood-section">

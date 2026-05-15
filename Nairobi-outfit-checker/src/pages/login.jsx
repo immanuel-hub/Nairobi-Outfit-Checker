@@ -3,7 +3,8 @@ import { useAuth } from '../contexts/AuthContext'
 
 function Login() {
    const { signInWithGoogle } = useAuth()
-   const [isLoading, setError] = useState('')
+   const [isLoading, setIsLoading] = useState(false)
+   const [error, setError] = useState('')
 
    const handleSignIn = async () => {
     try{
@@ -18,8 +19,8 @@ function Login() {
         setIsLoading(false)
     }
    }
-}
-return (
+
+   return (
     <div className="login-container">
      <div className= "login-card" >
          <h1>Nairobi Outfit Checker</h1>
@@ -43,5 +44,6 @@ return (
      </div>
  </div>
 )
+}
 
 export default Login

@@ -9,8 +9,7 @@ function About() {
       <p>
         Nairobi Outfit Checker helps you decide what to wear before heading out.
         Just pick the area of Nairobi you are going to and the app will show you
-        outfit recommendations for the Morning, Afternoon and Evening based on
-        the real weather forecast for that area.
+        outfit recommendations based on the real weather forecast for that area.
       </p>
 
       <p>You can check multiple areas at once — useful when you have errands in different parts of the city.</p>

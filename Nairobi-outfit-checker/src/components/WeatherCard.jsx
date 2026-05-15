@@ -1,4 +1,4 @@
-f// WeatherCard.jsx
+// WeatherCard.jsx
 // Component that displays weather information and outfit recommendations
 
 function WeatherCard({ weather }) {
