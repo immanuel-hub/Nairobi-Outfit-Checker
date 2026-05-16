@@ -1,5 +1,3 @@
-// About.jsx
-// Information page explaining what the app does and how it was built
 
 function About() {
   return (
