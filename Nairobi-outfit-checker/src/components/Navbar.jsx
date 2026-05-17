@@ -12,7 +12,6 @@ return (
     <div className="nav-links">
         <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
         <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link>
-
         <div className="user-info">
             {user.photoURL && (
                 <img src={user.photoURL} alt="Profile" className="user-avatar" />
