@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext'
 
+function getSignInErrorMessage(error) {
+   if (error?.code === 'auth/unauthorized-domain') {
+      return 'This site is not allowed for Firebase Google sign-in yet. Add the current domain in Firebase Console -> Authentication -> Settings -> Authorized domains, then try again.'
+   }
+
+   return error?.message || 'Failed to sign in. Please try again.'
+}
+
 function Login() {
    const { signInWithGoogle } = useAuth()
    const [isLoading, setIsLoading] = useState(false)
@@ -14,7 +22,7 @@ function Login() {
         await signInWithGoogle()
     } catch (error) {
         console.error('Sign in error:', error)
-        setError(error.message || 'Failed to sign in. Please try again.')
+        setError(getSignInErrorMessage(error))
     }finally {
         setIsLoading(false)
     }

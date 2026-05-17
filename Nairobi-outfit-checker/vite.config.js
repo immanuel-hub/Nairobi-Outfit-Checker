@@ -3,7 +3,7 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 
 export default defineConfig({
-  base: '/Nairobi-Outfit-Checker/',
+  base: process.env.GITHUB_ACTIONS ? '/Nairobi-Outfit-Checker/' : '/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
