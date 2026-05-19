@@ -14,8 +14,8 @@ export function getTimeOfDay(hour) {
   if (hour >= 17 && hour < 21) return 'Evening'
   return 'Night'
 }
-
-// Simplified outfit algorithm
+  
+/outfit algorithm
 export function getOutfit(temp, rain, wind, hour) {
   const isRainy = rain >= 50
   const isWindy = wind >= 20
