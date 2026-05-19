@@ -2,7 +2,7 @@
 
 A web app that tells you what to wear based on the real weather in your Nairobi neighbourhood.
 
-## What it does
+## What it does.
 
 You pick a neighbourhood in Nairobi and the app fetches the current weather forecast for that area and recommends an outfit through calculating the day's hourly temperature.
 
